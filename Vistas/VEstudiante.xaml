@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="JMacasS6.Vistas.VEstudiante"
+             Title="VEstudiante">
+    <VerticalStackLayout
+        Margin="25"
+        >
+        <Label 
+            Text="CONSUMO DE APIS REST"
+            FontSize="24"
+            VerticalOptions="Center" 
+            HorizontalOptions="Center" 
+            TextColor="Blue"/>
+
+        <!--  <ListView x:Name="listaEstudiantes -->
+ <!-- <ListView.ItemTemplate -->
+ <!-- <DataTemplate -->
+ <!-- <ViewCell -->
+ <!-- <StackLayout> -->
+                            <!--     <Label x:Name="lblNombre" Text="{Binding nombre}"/>   -->
+                            <!--    <Label x:Name="lblApellido" Text="{Binding apellido}"   -->
+                            <!-- <Label x:Name="lblEdad" Text="{Binding edad}"/>  -->
+
+        <!--</StackLayout> -->
+        <!--</ViewCell -->
+
+        <!--</DataTemplate -->
+        <!--</ListView.ItemTemplate -->
+
+        <!-- </ListView -->
+      
+
+        <TableView x:Name="tablaEstudiantes">
+            <TableRoot>
+                <TableSection Title="">
+                    <ViewCell>
+                        <StackLayout Orientation="Horizontal">
+                            <Label Text="CODIGO" TextColor="Green" HorizontalOptions="FillAndExpand" />
+                            <Label Text="NOMBRE" TextColor="Green" HorizontalOptions="FillAndExpand" />
+                            <Label Text="APELLIDO" TextColor="Green" HorizontalOptions="FillAndExpand" />
+                            <Label Text="EDAD"  TextColor="Green" HorizontalOptions="FillAndExpand" />
+                        </StackLayout>
+                    </ViewCell>
+                    <ViewCell>
+                        <StackLayout Orientation="Horizontal">
+                            
+                            <Label Text="{Binding contador}" HorizontalOptions="FillAndExpand" />
+                            <Label Text="{Binding nombre}" HorizontalOptions="FillAndExpand" />
+                            <Label Text="{Binding apellido}" HorizontalOptions="FillAndExpand" />
+                            <Label Text="{Binding edad}" HorizontalOptions="FillAndExpand" />
+                        </StackLayout>
+                    </ViewCell>
+
+
+            
+
+
+                </TableSection>
+            </TableRoot>
+        </TableView>
+
+    </VerticalStackLayout>
+</ContentPage>
