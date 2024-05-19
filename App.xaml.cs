@@ -1,4 +1,6 @@
-﻿namespace JMacasS6
+﻿using System.Net.Mail;
+
+namespace JMacasS6
 {
     public partial class App : Application
     {
@@ -7,7 +9,8 @@
             InitializeComponent();
 
             //MainPage = new AppShell();
-            MainPage = new Vistas.VEstudiante();
+            //MainPage = new Vistas.VEstudiante();
+            MainPage = new NavigationPage(new Vistas.VEstudiante());
         }
     }
 }
